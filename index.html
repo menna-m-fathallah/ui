@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <title>Todo list</title>
+</head>
+
+<body>
+   <header>
+       <section class="container flex">
+           <i class="fas fa-clipboard-list"></i>
+           <h1>Todo list</h1>
+          <button id="edit">Edit</button>
+       </section>
+   </header>
+    <section class="table">
+        <section class="grid">
+                <form id="addTask">
+                            <input id="task" placeholder="enter task">
+                            <textarea id="details" placeholder="enter details"></textarea>
+                            <button id="add">Add</button>
+                    </form>
+            <section  class="red">
+                <h2>hold</h2>
+                <section id="hold" class="hold area"></section>
+            </section>
+            <section class="orange">
+                <h2>progress</h2>
+                <section class="progress area" id="progress">
+                </section>
+            </section>
+            <section class="yellow">
+                <h2>review</h2>
+                <section class="review area" id="review"></section>
+            </section>
+            <section class="green">
+                <h2>done</h2>
+                <section class="done area" id="done"></section>
+            </section>
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
